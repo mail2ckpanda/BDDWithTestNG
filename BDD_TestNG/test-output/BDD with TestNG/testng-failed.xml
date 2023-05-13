@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [BDD with TestNG]" parallel="tests">
+  <test thread-count="3" name="RegressionTest(failed)" parallel="tests">
+    <classes>
+      <class name="Runner.RegressionTestRunner">
+        <methods>
+          <include name="runScenario" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- Runner.RegressionTestRunner -->
+    </classes>
+  </test> <!-- RegressionTest(failed) -->
+  <test thread-count="3" name="SmokeTest(failed)" parallel="tests">
+    <classes>
+      <class name="Runner.SmokeTestRunner">
+        <methods>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- Runner.SmokeTestRunner -->
+    </classes>
+  </test> <!-- SmokeTest(failed) -->
+</suite> <!-- Failed suite [BDD with TestNG] -->

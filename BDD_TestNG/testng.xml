@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BDD with TestNG" thread-count="3" parallel = "tests">
+  <test name="SmokeTest">
+    <classes>
+      <class name="Runner.SmokeTestRunner"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="RegressionTest">
+    <classes>
+      <class name="Runner.RegressionTestRunner"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
